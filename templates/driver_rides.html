@@ -1,0 +1,6 @@
+<h1>Driver Rides</h1>
+{% for i in rides %}
+{{i.id}} {{i.pickup_location}} {{i.drop_location}} {{i.fare}} {{i.status}}
+<a href="/status/{{i.id}}/started/">Start</a>
+<a href="/status/{{i.id}}/completed/">Complete</a>
+{% endfor %}

@@ -1,0 +1,9 @@
+<h1>Available rides</h1>
+{% for i in rides %}
+
+{{i.id}} {{i.pickup_location}} {{i.drop_location}} {{i.fare}}
+
+<a href="/accept/{{i.id}}/">Accept</a>
+<a href="/cancel/{{i.id}}/">Cancel</a>
+
+{% endfor %}
